@@ -1,4 +1,10 @@
 /* common shared styles */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     font-family: "Open Sans", sans-serif;
@@ -18,12 +24,21 @@ body {
     padding: 15px 35px;
 }
 
+/* Header related styles */
+header {
+    background: #FFF8F3;
+    background-image: url(../images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
 /* nav related styles */
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    margin: 0 150px;
+    padding-top: 50px;
 }
 
 .nav-title {
@@ -45,4 +60,69 @@ nav li {
 nav a {
     text-decoration: none;
     color: #474747;
+    font-size: 20px;
+}
+
+/* banner related styles */
+.banner {
+    margin: 30px 30px 0px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-content {
+    max-width: 500px;
+}
+
+.banner-greetings {
+    color: #474747;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.banner-title {
+    color: #181818;
+    font-size: 85px;
+    font-weight: 700;
+}
+
+.banner-text {
+    color: #757575;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.banner img {
+    width: 584px;
+    height: 676px;
+}
+
+.banner button {
+    margin-right: 30px;
+}
+
+/* About section Styles */
+
+.about-section {
+    margin: 130px 150px;
+    border-radius: 10px;
+    background: #FFF8F3;
+    padding: 130px 150px;
+}
+
+.section-title {
+    color: #181818;
+    text-align: center;
+    font-size: 35px;
+}
+
+.section-description {
+    color: #757575;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 30px 0;
 }
