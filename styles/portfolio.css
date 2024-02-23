@@ -283,6 +283,14 @@ footer {
     main {
         margin: 20px;
     }
+    .about-section{
+        padding: 20px;
+    }
+
+    .about-info-container{
+        flex-direction: column;
+        gap: 20px;
+    }
 
     .skills-container,
     .resume-container {
@@ -315,12 +323,20 @@ footer {
         margin: 0 20px;
     }
 
+    .about-section{
+        padding: 20px;
+    }
+
+    .about-info-container{
+        gap: 20px;
+    }
+
     .skills-container {
         flex-direction: column;
     }
 
     .what-i-do-description {
-        padding: 0 15px;
+        padding: 0 20px;
     }
 
     .resume-container {
