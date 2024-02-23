@@ -10,6 +10,11 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+/* main related styles */
+main {
+    margin: 0 220px;
+}
+
 .text-primary {
     color: #FD6E0A;
 }
@@ -102,12 +107,6 @@ nav a {
 
 .banner button {
     margin-right: 30px;
-}
-
-/* main related styles */
-
-main {
-    margin: 0 220px;
 }
 
 /* About section Styles */
@@ -236,7 +235,7 @@ footer {
 }
 
 .footer-column {
-    width: 50%;
+    width: calc((100% - 117px)/2);
 }
 
 .footer-column-title {
@@ -249,12 +248,13 @@ footer {
     margin: 20px 0 30px 0;
 }
 
-.social-links{
+.social-links {
     display: flex;
     gap: 24px;
 }
 
-.footer-column input, .footer-column textarea {
+.footer-column input,
+.footer-column textarea {
     width: 100%;
     border-radius: 5px;
     background: #FFF;
@@ -263,6 +263,76 @@ footer {
     color: #757575;
     padding: 18px 30px;
 }
-.footer-column textarea{
+
+.footer-column textarea {
     height: 180px;
+}
+
+.hide {
+    display: none;
+}
+
+/* Media Query */
+
+/* Mobile Devices */
+@media screen and (max-width: 576px) {
+    * {
+        /* border: 1px solid red; */
+    }
+
+    main {
+        margin: 20px;
+    }
+
+    .skills-container,
+    .resume-container {
+        flex-direction: column;
+    }
+
+    .what-i-do-description {
+        padding: 0 15px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 20px 50px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .footer-column input,
+    .footer-column textarea {
+        width: 80%;
+    }
+}
+
+/* Medium Devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+    main {
+        margin: 0 20px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .what-i-do-description {
+        padding: 0 15px;
+    }
+
+    .resume-container {
+        align-items: flex-start;
+    }
+
+    footer {
+        padding: 20px 50px;
+        gap: 50px;
+    }
+    .footer-column input,
+    .footer-column textarea {
+        width: 80%;
+    }
 }
