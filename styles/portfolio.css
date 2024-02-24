@@ -280,8 +280,24 @@ footer {
         /* border: 1px solid red; */
     }
 
-    main {
+    main,
+    nav,
+    .banner {
         margin: 20px;
+    }
+    nav{
+        gap: 10px;
+    }
+    header{
+        background-image: none;
+    }
+    .banner img {
+        width: 100%;
+        height: auto;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        gap: 10px;
     }
     .about-section{
         padding: 20px;
@@ -293,7 +309,8 @@ footer {
     }
 
     .skills-container,
-    .resume-container {
+    .resume-container,
+    nav {
         flex-direction: column;
     }
 
